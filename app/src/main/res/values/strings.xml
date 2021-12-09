@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SampleUsageSDK</string>
+    <string name="tab_face_measurement">Измерение по лицу</string>
+    <string name="tab_devices_measurement">Измерение по приборам</string>
+    <string name="button_ok">OK</string>
+    <string name="button_start_measurement">Начать измерение</string>
+    <string name="button_stop_measurement">Остановить измерение</string>
+    <string name="message_find_face">Лицо обнаружено</string>
+    <string name="message_no_face">Измерение остановлено.</string>
+    <string name="title_saturation_results">Сатурация: </string>
+    <string name="title_pulse_rate_results">Пульс: </string>
+    <string name="title_breathing_rate_results">Дыхание: </string>
+    <string name="title_SDNNHeartRateVariability_results">SDNN: </string>
+    <string name="title_stress_level_results">Стресс: </string>
+    <string name="title_blood_pressure_results">Давление: </string>
+</resources>

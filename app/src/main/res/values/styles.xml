@@ -1,0 +1,9 @@
+<resources>
+    <style name="TextViewResult">
+        <item name="android:theme">@style/Theme.MaterialComponents</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">#60000000</item>
+    </style>
+</resources>
