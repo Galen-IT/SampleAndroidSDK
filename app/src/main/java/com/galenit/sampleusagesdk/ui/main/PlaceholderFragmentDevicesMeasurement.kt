@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -92,7 +93,7 @@ class PlaceholderFragmentDevicesMeasurement : Fragment() {
 
     private fun addLineTextView(textView: TextView, textLine: String) {
         activity?.runOnUiThread {
-            val text = textView.text.toString() + textLine + "\n"
+            val text = textLine + "\n" + textView.text.toString()
             textView.text = text
         }
     }
