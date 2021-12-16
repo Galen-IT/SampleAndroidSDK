@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.galenit.component.binah.BinahView
 import com.galenit.device.api.base.WavePartListener
 import com.galenit.device.api.parameter.Parameter
 import com.galenit.sampleusagesdk.R
@@ -41,6 +42,15 @@ class PlaceholderFragmentFaceMeasurement : Fragment() {
 
         _binding = FragmentFaceMeasurementBinding.inflate(inflater, container, false)
         val root = binding.root
+
+        binding.radioGroupe.setOnCheckedChangeListener { group, checkedId ->
+            if (group == binding.radioGroupe) {
+                when(checkedId) {
+                    binding.radioButtonFace.id -> binding.cameraView.mode = BinahView.Mode.FACE
+                    binding.radioButtonFinger.id -> binding.cameraView.mode = BinahView.Mode.FINGER
+                }
+            }
+        }
 
         binding.cameraView.onFace = { bitmap, _ ->
             Toast.makeText(context, getString(R.string.message_find_face), Toast.LENGTH_LONG).show()

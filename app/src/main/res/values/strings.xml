@@ -13,4 +13,7 @@
     <string name="title_SDNNHeartRateVariability_results">SDNN: </string>
     <string name="title_stress_level_results">Стресс: </string>
     <string name="title_blood_pressure_results">Давление: </string>
+    <string name="title_radio_button_face">По лицу</string>
+    <string name="title_radio_button_finger">По пальцу</string>
+    <string name="title_textview_type_measurement">Тип измерения</string>
 </resources>
