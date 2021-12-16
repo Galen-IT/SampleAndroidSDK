@@ -9,3 +9,4 @@ build/
 local.properties
 /libstage1.so
 /.idea/
+/app/libs/bundler-release.aar
